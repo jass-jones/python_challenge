@@ -11,8 +11,8 @@ max = 0
 min = 0
 total = 0
 
-file = "/Users/jassjones/cwru-cle-virt-data-pt-07-2021-u-c/Homework/03-Python/PyBank/Resources/budget_data.csv"
-file = ("PyBank\Resources\budget_data.csv")
+#file = "/Users/jassjones/cwru-cle-virt-data-pt-07-2021-u-c/Homework/03-Python/PyBank/Resources/budget_data.csv"
+file = "PyBank/Resources/budget_data.csv"
 
 print ("Financial Analysis")
 
@@ -66,7 +66,8 @@ print (f"Greatest Increase in Profits: {max_date} (${max})")
 print (f"Greatest Decrease in Profits: {min_date} (${min})")
 
 
-text_file = "/Users/jassjones/cwru-cle-virt-data-pt-07-2021-u-c/Homework/03-Python/PyBank/Analysis/text_file.txt"
+#text_file = "/Users/jassjones/cwru-cle-virt-data-pt-07-2021-u-c/Homework/03-Python/PyBank/Analysis/text_file.txt"
+text_file = "PyBank/Analysis/text_file.txt"
 with open (text_file, 'w') as  text:
 
      text.write('Financial Analysis')
