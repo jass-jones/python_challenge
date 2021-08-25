@@ -6,7 +6,7 @@ votes = []
 
 candidate = []
 
-#file = "/Users/jassjones/cwru-cle-virt-data-pt-07-2021-u-c/Homework/03-Python/PyPoll/Resources/election_data.csv"
+
 file = "PyPoll/Resources/election_data.csv"
 
 print ("Election Results")
@@ -65,7 +65,6 @@ with open(file) as csvfile:
     print ("---------------------------------")
 
 
-#text_file = "/Users/jassjones/cwru-cle-virt-data-pt-07-2021-u-c/Homework/03-Python/PyPoll/Analysis/text_file.txt"
 text_file = "PyPoll/Analysis/text_file.txt"
 
 with open (text_file, 'w') as text:
