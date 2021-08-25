@@ -6,7 +6,8 @@ votes = []
 
 candidate = []
 
-file = "/Users/jassjones/cwru-cle-virt-data-pt-07-2021-u-c/Homework/03-Python/Instructions/PyPoll/Resources/election_data.csv"
+file = "/Users/jassjones/cwru-cle-virt-data-pt-07-2021-u-c/Homework/03-Python/PyPoll/Resources/election_data.csv"
+#file = ("PyPoll\Resources\eletcion_data.csv")
 
 print ("Election Results")
 
@@ -40,6 +41,7 @@ with open(file) as csvfile:
     li_percent = round((li/total), 2)* 100
     tooley_percent = round((tooley/total), 2)* 100
 
+
     print (f"Khan: {khan_percent}% ({khan})")
     print (f"Correy: {correy_percent}% ({correy})")
     print (f"Li: {li_percent}% ({li})")
@@ -47,23 +49,35 @@ with open(file) as csvfile:
     print ("--------------------------------")
 
     if khan > correy and li and tooley:
-        print ("Winner: Khan")
+        winner = "Khan"
 
     elif correy > khan and li and tooley:
-        print ("Winner: Correy")
+        winnner = "Correy"
 
     elif li > khan and correy and li:
-        print ("Winner: Li")
+        winner = "Li"
 
     elif tooley > khan and correy and li:
-        print ("Winner: O'Tooley")
+        winner = "O'Tooley"
+
+    print (f"Winner: {winner}")
 
     print ("---------------------------------")
 
 
+text_file = "/Users/jassjones/cwru-cle-virt-data-pt-07-2021-u-c/Homework/03-Python/PyPoll/Analysis/text_file.txt"
+with open (text_file, 'w') as text:
 
-
-
+    text.write('Election Results')
+    text.write('\n-------------------------------')
+    text.write(f'\nTotal Votes: {total}')
+    text.write(f'\n--------------------------------')
+    text.write(f'\nKhan: {khan_percent}% ({khan})')
+    text.write(f'\nCorrey: {correy_percent}% ({correy})')
+    text.write(f'\nOTooley: {tooley_percent}% ({tooley})')
+    text.write(f'\n--------------------------------')
+    text.write(f'\nWinner: {winner}')
+    text.write('\n---------------------------------')
 
 
     
