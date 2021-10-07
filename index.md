@@ -11,15 +11,14 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+Introduction to Python
 
-- Bulleted
-- List
+- This project will show you how to perform the basic executions of Pythin using VS coding
+- In This project you will see 
 
-1. Numbered
-2. List
+1. importing cvs files
+2. filitering through cvs files
+3. calculating totals, means, averges, ect.
 
 **Bold** and _Italic_ and `Code` text
 
